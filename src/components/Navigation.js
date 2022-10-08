@@ -76,7 +76,30 @@ function Navigation(props) {
               image={require("../assets/petLogo.PNG")}
               name={`Fuzzy Friends Finder`}
             />
-            <Project />
+            <Project
+              id={`codingQuiz`}
+              href={`https://michaelavarberg.github.io/coding-quiz/`}
+              image={require("../assets/codingQuiz.PNG")}
+              name={`Coding Quiz`}
+            />
+            <Project
+              id={`workday`}
+              href={`https://michaelavarberg.github.io/work-day-organizer/`}
+              image={require("../assets/scheduler.PNG")}
+              name={`Work Day Organizer`}
+            />
+            <Project
+              id={`weather`}
+              href={`https://michaelavarberg.github.io/weather-forecast/`}
+              image={require("../assets/weather.PNG")}
+              name={`Weather Forecast`}
+            />
+            <Project
+              id={`password`}
+              href={`https://michaelavarberg.github.io/password-generator/`}
+              image={require("../assets/password.PNG")}
+              name={`Password Generator`}
+            />
           </section>
         </section>
       </div>
