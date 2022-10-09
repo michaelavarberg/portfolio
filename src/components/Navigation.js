@@ -2,7 +2,7 @@ import Project from "../components/Project";
 import { useState } from "react";
 
 function Navigation(props) {
-  const [name, setName] = useState("Michaela");
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [feedback, setFeedback] = useState("");
   const [messageText, setMessageText] = useState("");
@@ -47,6 +47,14 @@ function Navigation(props) {
             className="d-flex-inline justify-content-start"
           >
             <h2 className="m-3">About Me</h2>
+            <div className="d-flex justify-content-center">
+              <figure id="personal-photo">
+                <img
+                  src={require("../assets/KBMS-Michaela-Varberg.jpg")}
+                  alt="Michaela Varberg"
+                />
+              </figure>
+            </div>
             <h4 className="m-5 text-center">
               I am a junior software developer living in Denver, Colorado. I
               studied Applied Math in college and then went on to teach 7th
@@ -104,12 +112,12 @@ function Navigation(props) {
         </section>
       </div>
     );
-  } else {
+  } else if (props.nav === "contact-info") {
     return (
       <div>
         <section>
-          <h2>Contact Information</h2>
-          <form className="form">
+          <h2 className="m-3">Contact Information</h2>
+          <form className="form d-flex flex-column justify-content-center align-items-start m-5">
             <input
               value={name}
               name="name"
@@ -117,6 +125,7 @@ function Navigation(props) {
               placeholder="Name"
               onChange={handleInputChange}
               onMouseOut={handleMouseOut}
+              className="m-3"
             />
             <input
               value={email}
@@ -125,21 +134,48 @@ function Navigation(props) {
               type="text"
               placeholder="Email"
               onMouseOut={handleMouseOut}
+              className="m-3"
             />
-            <input
+            <textarea
               value={messageText}
               name="message"
               type="text"
               onChange={handleInputChange}
               placeholder="Type your message here"
               onMouseOut={handleMouseOut}
+              className="m-3 w-50"
+              rows="3"
             />
-            <button type="button" onClick={handleFormSubmit}>
+            <h6 className="text-center m-3">{feedback}</h6>
+            <button
+              type="button"
+              onClick={handleFormSubmit}
+              className="btn btn-primary m-3"
+            >
               Submit
             </button>
           </form>
-          <h6>{feedback}</h6>
         </section>
+      </div>
+    );
+  } else {
+    return (
+      <div className="d-flex flex-column align-items-center">
+        <div className="btn btn-primary m-3">Download Resume</div>
+        <div className="d-flex-inline">
+          {" "}
+          My Proficiencies:
+          <ul className="d-flex list-unstyled justify-content-between">
+            <li className="m-3">React</li>
+            <li className="m-3">NodeJS</li>
+            <li className="m-3">Express</li>
+            <li className="m-3">MongoDB</li>
+            <li className="m-3">SQL</li>
+            <li className="m-3">Javascript</li>
+            <li className="m-3">CSS</li>
+            <li className="m-3">HTML5</li>
+          </ul>
+        </div>
       </div>
     );
   }

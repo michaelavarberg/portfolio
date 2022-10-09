@@ -96,6 +96,18 @@ function Header() {
             Contact Information
           </a>
         </li>
+        <li className=" m-3">
+          <a
+            className="btn btn-primary"
+            type="button"
+            id="resume"
+            href="#resume"
+            onClick={handleClick}
+            aria-pressed="false"
+          >
+            Resume
+          </a>
+        </li>
       </ul>
 
       <div>
