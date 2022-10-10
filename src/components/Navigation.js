@@ -56,7 +56,7 @@ function Navigation(props) {
                 />
               </figure>
 
-              <h4 className="m-5 text-center w-50">
+              <h4 className=" mb-10 text-center w-50">
                 I am a junior software developer living in Denver, Colorado. I
                 studied Applied Math in college and then went on to teach 7th
                 grade math. I love problem-solving and critical thinking, hence
@@ -170,22 +170,38 @@ function Navigation(props) {
     );
   } else {
     return (
-      <div className="d-flex flex-column align-items-center">
-        <div className="btn btn-primary m-3">Download Resume</div>
-        <div className="d-flex-inline">
+      <div className="d-flex flex-column align-items-start">
+        <div className="d-flex-inline mx-5">
           {" "}
-          My Proficiencies:
-          <ul className="d-flex list-unstyled justify-content-between">
-            <li className="m-3">React</li>
-            <li className="m-3">NodeJS</li>
-            <li className="m-3">Express</li>
-            <li className="m-3">MongoDB</li>
-            <li className="m-3">SQL</li>
-            <li className="m-3">Javascript</li>
-            <li className="m-3">CSS</li>
-            <li className="m-3">HTML5</li>
-          </ul>
+          <h3 className="my-4">My Proficiencies</h3>
+          <div className="d-flex mx-10 flex-wrap">
+            <div>
+              <h4>Front-end: </h4>
+              <ul className="d-flex flex-column  mx-5 ">
+                {" "}
+                <li className="m-2">NodeJS</li>
+                <li className="m-2">jQuery</li>
+                <li className="m-2">Responsive Design</li>
+                <li className="m-2">Javascript</li>
+                <li className="m-2">CSS</li>
+                <li className="m-2">HTML5</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Back-end: </h4>
+              <ul className="d-flex flex-column mx-5">
+                <li className="m-2">SQL</li>
+                <li className="m-2">MySQL</li>
+                <li className="m-2">MongoDB</li>
+                <li className="m-2">Mongoose</li>
+                <li className="m-2">Express</li>
+                <li className="m-2">GraphQL</li>
+                <li className="m-2">React</li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <div className="btn btn-primary m-3">Download Resume</div>
       </div>
     );
   }

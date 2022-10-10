@@ -57,7 +57,7 @@ function Header() {
         </label>
       </div> */}
       <ul
-        className="navBar list-unstyled p-3 d-flex justify-content-center btn-group"
+        className="navBar list-unstyled p-3 d-flex flex-wrap justify-content-center btn-group"
         role="group"
         aria-label="nav-group"
       >

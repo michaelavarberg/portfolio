@@ -1,8 +1,8 @@
 function Footer() {
   return (
-    <div className="d-flex justify-content-center m-3 footer">
+    <div className="d-flex justify-content-center footer">
       <footer id="contact" className="mt-auto">
-        <ul className="nav">
+        <ul className="nav d-flex flex-wrap">
           <li className="nav-item m-3">
             <a
               className="nav-link active footerNav"
