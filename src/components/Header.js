@@ -1,12 +1,22 @@
 import Navigation from "./Navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Header() {
   const [navClick, setNavClick] = useState("about-me");
-  const [highlight, setHighlight] = useState("");
+  const [activeKey, setActiveKey] = useState("about-me");
   const handleClick = (e) => {
     setNavClick(e.target.id);
+    setActiveKey(e.target.id);
   };
+  const handleSelect = (e) => {
+    e.preventDefault();
+    this.id === activeKey ? (this.selected = true) : (this.selected = false);
+  };
+
+  useEffect(() => {
+    const array = document.querySelectorAll("#li");
+    console.log(array);
+  });
 
   return (
     <div>
@@ -68,6 +78,7 @@ function Header() {
             id="about-me"
             href="#about-me"
             onClick={handleClick}
+            selected="true"
           >
             About Me
           </a>
@@ -79,7 +90,7 @@ function Header() {
             id="my-apps"
             href="#my-apps"
             onClick={handleClick}
-            aria-pressed="false"
+            selected="true"
           >
             My Applications
           </a>
@@ -91,7 +102,7 @@ function Header() {
             id="contact-info"
             href="#contact"
             onClick={handleClick}
-            aria-pressed="false"
+            selected="true"
           >
             Contact Me
           </a>
@@ -103,7 +114,7 @@ function Header() {
             id="resume"
             href="#resume"
             onClick={handleClick}
-            aria-pressed="false"
+            selected="true"
           >
             Resume
           </a>

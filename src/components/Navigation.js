@@ -56,7 +56,7 @@ function Navigation(props) {
                 />
               </figure>
 
-              <h4 className=" mb-10 text-center w-50">
+              <h4 className="mb-10 text-center w-50">
                 I am a junior software developer living in Denver, Colorado. I
                 studied Applied Math in college and then went on to teach 7th
                 grade math. I love problem-solving and critical thinking, hence
