@@ -57,7 +57,7 @@ function Header() {
         </label>
       </div> */}
       <ul
-        className=" bg-dark p-3 d-flex justify-content-center btn-group"
+        className="navBar list-unstyled p-3 d-flex justify-content-center btn-group"
         role="group"
         aria-label="nav-group"
       >
@@ -93,7 +93,7 @@ function Header() {
             onClick={handleClick}
             aria-pressed="false"
           >
-            Contact Information
+            Contact Me
           </a>
         </li>
         <li className=" m-3">

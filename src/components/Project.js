@@ -9,7 +9,12 @@ function Project(props) {
             className="img-fluid"
           />
         </a>
-        <figcaption className="text-center m-2">{props.name}</figcaption>
+        <div className="d-flex flex-column justify-content-center">
+          <h3 className="text-center m-2">{props.name}</h3>
+          <a className="text-center" href={props.code} target="_blank">
+            Code
+          </a>
+        </div>
       </figure>
     </div>
   );

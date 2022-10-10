@@ -47,21 +47,23 @@ function Navigation(props) {
             className="d-flex-inline justify-content-start"
           >
             <h2 className="m-3">About Me</h2>
-            <div className="d-flex justify-content-center">
-              <figure id="personal-photo">
+            <div className="d-flex  flex-column align-items-center">
+              <figure id="personal-photo" className="mt-3">
                 <img
                   src={require("../assets/KBMS-Michaela-Varberg.jpg")}
                   alt="Michaela Varberg"
+                  className="picture"
                 />
               </figure>
+
+              <h4 className="m-5 text-center w-50">
+                I am a junior software developer living in Denver, Colorado. I
+                studied Applied Math in college and then went on to teach 7th
+                grade math. I love problem-solving and critical thinking, hence
+                my career change! When I'm not coding, I enjoy reading, golfing
+                and playing pickleball.
+              </h4>
             </div>
-            <h4 className="m-5 text-center">
-              I am a junior software developer living in Denver, Colorado. I
-              studied Applied Math in college and then went on to teach 7th
-              grade math. I love problem-solving and critical thinking, hence my
-              career change! When I'm not coding, I enjoy reading, golfing and
-              playing pickleball.
-            </h4>
           </section>
         </main>
       </div>
@@ -77,36 +79,42 @@ function Navigation(props) {
               href={`https://kiss-the-cook.herokuapp.com/api/recipes`}
               image={require("../assets/kissthecook.PNG")}
               name={`Kiss The Cook`}
+              code={`https://github.com/madrodgerflynn/Kiss_The_Cook`}
             />
             <Project
               id={`fuzzyFriends`}
               href={`https://csundheimjr.github.io/fuzzy-friend-finder/`}
               image={require("../assets/petLogo.PNG")}
               name={`Fuzzy Friends Finder`}
+              code={`https://github.com/csundheimjr/fuzzy-friend-finder`}
             />
             <Project
               id={`codingQuiz`}
               href={`https://michaelavarberg.github.io/coding-quiz/`}
               image={require("../assets/codingQuiz.PNG")}
               name={`Coding Quiz`}
+              code={`https://github.com/michaelavarberg/coding-quiz`}
             />
             <Project
               id={`workday`}
               href={`https://michaelavarberg.github.io/work-day-organizer/`}
               image={require("../assets/scheduler.PNG")}
               name={`Work Day Organizer`}
+              code={`https://github.com/michaelavarberg/work-day-organizer`}
             />
             <Project
               id={`weather`}
               href={`https://michaelavarberg.github.io/weather-forecast/`}
               image={require("../assets/weather.PNG")}
               name={`Weather Forecast`}
+              code={`https://github.com/michaelavarberg/weather-forecast`}
             />
             <Project
               id={`password`}
               href={`https://michaelavarberg.github.io/password-generator/`}
               image={require("../assets/password.PNG")}
               name={`Password Generator`}
+              code={`https://github.com/michaelavarberg/password-generator`}
             />
           </section>
         </section>
@@ -116,7 +124,9 @@ function Navigation(props) {
     return (
       <div>
         <section>
-          <h2 className="m-3">Contact Information</h2>
+          <h3 className="m-5">
+            Contact me by filling out the information below:
+          </h3>
           <form className="form d-flex flex-column justify-content-center align-items-start m-5">
             <input
               value={name}
