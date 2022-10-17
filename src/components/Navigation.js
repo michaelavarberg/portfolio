@@ -75,6 +75,13 @@ function Navigation(props) {
           <h2 className="m-3">My Applications</h2>
           <section className="d-flex flex-column align-items-center p-5">
             <Project
+              id={`tripSplit`}
+              href={`https://trip-split-atoz.herokuapp.com/`}
+              image={require("../assets/tripsplit.PNG")}
+              name={`Trip $plit`}
+              code={`https://github.com/mbottoms3/trip_split`}
+            />
+            <Project
               id={`kissTheCook`}
               href={`https://kiss-the-cook.herokuapp.com/api/recipes`}
               image={require("../assets/kissthecook.PNG")}
@@ -108,13 +115,6 @@ function Navigation(props) {
               image={require("../assets/weather.PNG")}
               name={`Weather Forecast`}
               code={`https://github.com/michaelavarberg/weather-forecast`}
-            />
-            <Project
-              id={`tripSplit`}
-              href={`https://trip-split-atoz.herokuapp.com/`}
-              image={require("../assets/tripsplit.PNG")}
-              name={`Trip $plit`}
-              code={`https://github.com/mbottoms3/trip_split`}
             />
           </section>
         </section>
