@@ -110,11 +110,11 @@ function Navigation(props) {
               code={`https://github.com/michaelavarberg/weather-forecast`}
             />
             <Project
-              id={`password`}
-              href={`https://michaelavarberg.github.io/password-generator/`}
-              image={require("../assets/password.PNG")}
-              name={`Password Generator`}
-              code={`https://github.com/michaelavarberg/password-generator`}
+              id={`tripSplit`}
+              href={`https://trip-split-atoz.herokuapp.com/`}
+              image={require("../assets/tripsplit.PNG")}
+              name={`Trip $plit`}
+              code={`https://github.com/mbottoms3/trip_split`}
             />
           </section>
         </section>
