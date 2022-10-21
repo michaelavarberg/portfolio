@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="d-flex justify-content-center footer m-5">
+    <div className="d-flex justify-content-center footer">
       <footer id="contact" className="mt-auto">
         <ul
           className="navBar list-unstyled p-3 d-flex flex-wrap justify-content-center btn-group align-items-center h-100"
