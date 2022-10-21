@@ -1,36 +1,70 @@
 function Footer() {
   return (
-    <div className="d-flex justify-content-center footer">
+    <div className="d-flex justify-content-center footer m-5">
       <footer id="contact" className="mt-auto">
-        <ul className="nav d-flex flex-wrap">
-          <li className="nav-item m-3">
+        <ul
+          className="navBar list-unstyled p-3 d-flex flex-wrap justify-content-center btn-group align-items-center h-100"
+          role="group"
+          aria-label="nav-group"
+        >
+          <li className=" m-3 footer-text">
             <a
-              className="nav-link active footerNav"
+              className="footer-text"
+              id="about-me"
+              href="#about-me"
+              selected="true"
+            >
+              about
+            </a>
+          </li>
+          <li className=" m-3 footer-text">
+            <a
+              className="footer-text"
+              id="my-apps"
+              href="#my-apps"
+              selected="true"
+            >
+              portfolio
+            </a>
+          </li>
+          <li className=" m-3 footer-text">
+            <a
+              className="footer-text"
+              id="contact-info"
+              href="#contact"
+              selected="true"
+            >
+              contact
+            </a>
+          </li>
+          <li className="m-3">
+            <a
+              className="footer-text"
+              id="resume"
+              href="#resume"
+              selected="true"
+            >
+              resume
+            </a>
+          </li>
+
+          <li className="m-3">
+            <a
               id="github-link"
               href="https://github.com/michaelavarberg"
               target="_blank"
             >
-              GitHub
+              {" "}
+              <i className="fa-brands fa-github fa-2xl footer-text"></i>
             </a>
           </li>
-          <li className="nav-item m-3">
+          <li className="m-3">
             <a
-              className="nav-link active footerNav"
               id="linkedin-link"
-              href="https://www.linkedin.com/in/michaela-varberg-133031139"
+              href="https://www.linkedin.com/in/michaelavarberg"
               target="_blank"
             >
-              LinkedIn
-            </a>
-          </li>
-          <li className="nav-item m-3">
-            <a
-              className="nav-link active footerNav"
-              id="stack-overflow"
-              href="https://stackoverflow.com/users/19386138/michaela"
-              target="_blank"
-            >
-              Stack Overflow
+              <i className="fa-brands fa-linkedin fa-2xl footer-text"></i>
             </a>
           </li>
         </ul>

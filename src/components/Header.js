@@ -21,7 +21,81 @@ function Header() {
   return (
     <div>
       <header>
-        <h1 className="text-center m-5">Michaela Varberg</h1>
+        <div className="d-flex align-items-center justify-content-between">
+          <div className="mx-5 my-3">
+            <img src={require("../assets/logo.png")}></img>
+          </div>
+          <ul
+            className="navBar list-unstyled p-3 d-flex flex-wrap justify-content-center btn-group align-items-center h-100"
+            role="group"
+            aria-label="nav-group"
+          >
+            <li className=" m-3">
+              <a
+                className="header-text"
+                id="about-me"
+                href="#about-me"
+                onClick={handleClick}
+                selected="true"
+              >
+                about
+              </a>
+            </li>
+            <li className=" m-3">
+              <a
+                className="header-text"
+                id="my-apps"
+                href="#my-apps"
+                onClick={handleClick}
+                selected="true"
+              >
+                portfolio
+              </a>
+            </li>
+            <li className=" m-3">
+              <a
+                className="header-text"
+                id="contact-info"
+                href="#contact"
+                onClick={handleClick}
+                selected="true"
+              >
+                contact
+              </a>
+            </li>
+            <li className="m-3">
+              <a
+                className="header-text"
+                id="resume"
+                href="#resume"
+                onClick={handleClick}
+                selected="true"
+              >
+                resume
+              </a>
+            </li>
+
+            <li className="m-3">
+              <a
+                id="github-link"
+                href="https://github.com/michaelavarberg"
+                target="_blank"
+              >
+                {" "}
+                <i className="fa-brands fa-github fa-2xl header-text"></i>
+              </a>
+            </li>
+            <li className="m-3">
+              <a
+                id="linkedin-link"
+                href="https://www.linkedin.com/in/michaelavarberg"
+                target="_blank"
+              >
+                <i className="fa-brands fa-linkedin fa-2xl header-text"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </header>
       {/* <div
         className="btn-group"
@@ -66,60 +140,6 @@ function Header() {
           Radio 3
         </label>
       </div> */}
-      <ul
-        className="navBar list-unstyled p-3 d-flex flex-wrap justify-content-center btn-group"
-        role="group"
-        aria-label="nav-group"
-      >
-        <li className=" m-3">
-          <a
-            className=" btn btn-primary"
-            type="button"
-            id="about-me"
-            href="#about-me"
-            onClick={handleClick}
-            selected="true"
-          >
-            About Me
-          </a>
-        </li>
-        <li className=" m-3">
-          <a
-            className=" btn btn-primary"
-            type="button"
-            id="my-apps"
-            href="#my-apps"
-            onClick={handleClick}
-            selected="true"
-          >
-            My Applications
-          </a>
-        </li>
-        <li className=" m-3">
-          <a
-            className="btn btn-primary"
-            type="button"
-            id="contact-info"
-            href="#contact"
-            onClick={handleClick}
-            selected="true"
-          >
-            Contact Me
-          </a>
-        </li>
-        <li className=" m-3">
-          <a
-            className="btn btn-primary"
-            type="button"
-            id="resume"
-            href="#resume"
-            onClick={handleClick}
-            selected="true"
-          >
-            Resume
-          </a>
-        </li>
-      </ul>
 
       <div>
         <Navigation nav={navClick} />

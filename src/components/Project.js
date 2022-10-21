@@ -6,7 +6,7 @@ function Project(props) {
           <img
             src={props.image}
             alt="screenshot of the app"
-            className="img-fluid"
+            className="img-fluid image"
           />
         </a>
         <div className="d-flex flex-column justify-content-center">
