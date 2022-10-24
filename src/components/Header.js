@@ -23,7 +23,7 @@ function Header() {
       <header>
         <div className="d-flex align-items-center justify-content-between">
           <div className="mx-5 my-3">
-            {/* <img src={require("../assets/logo.png")}></img> */}
+            <img src={require("../assets/logo.png")}></img>
           </div>
           <ul
             className="navBar list-unstyled p-3 d-flex flex-wrap justify-content-center btn-group align-items-center h-100"
