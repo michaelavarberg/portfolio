@@ -8,15 +8,15 @@ function Header() {
     setNavClick(e.target.id);
     setActiveKey(e.target.id);
   };
-  const handleSelect = (e) => {
-    e.preventDefault();
-    this.id === activeKey ? (this.selected = true) : (this.selected = false);
-  };
+  // const handleSelect = (e) => {
+  //   e.preventDefault();
+  //   this.id === activeKey ? (this.selected = true) : (this.selected = false);
+  // };
 
-  useEffect(() => {
-    const array = document.querySelectorAll("#li");
-    console.log(array);
-  });
+  // useEffect(() => {
+  //   const array = document.querySelectorAll("#li");
+  //   console.log(array);
+  // });
 
   return (
     <div>

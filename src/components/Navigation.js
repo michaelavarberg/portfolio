@@ -200,7 +200,7 @@ function Navigation(props) {
             </div>
           </div>
         </div>
-        <div className="btn btn-primary m-3">
+        <div className="btn btn-primary m-3 download">
           <a href={require("../assets/MichaelaVarberg_Resume.pdf")} download>
             Download Resume
           </a>

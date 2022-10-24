@@ -50,6 +50,14 @@ body {
 /* body {
   /* background-color: var(--rose); */
 
+.download {
+  background-color: white;
+  border: none;
+}
+
+.download a {
+  color: black;
+}
 h2 {
   color: var(--black);
 }
