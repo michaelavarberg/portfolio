@@ -36,7 +36,7 @@ function Header() {
                 id="about-me"
                 href="#about-me"
                 onClick={handleClick}
-                selected="true"
+                selected={true}
               >
                 about
               </a>
@@ -47,7 +47,7 @@ function Header() {
                 id="my-apps"
                 href="#my-apps"
                 onClick={handleClick}
-                selected="true"
+                selected={true}
               >
                 portfolio
               </a>
@@ -58,7 +58,7 @@ function Header() {
                 id="contact-info"
                 href="#contact"
                 onClick={handleClick}
-                selected="true"
+                selected={true}
               >
                 contact
               </a>
@@ -69,7 +69,7 @@ function Header() {
                 id="resume"
                 href="#resume"
                 onClick={handleClick}
-                selected="true"
+                selected={true}
               >
                 resume
               </a>
