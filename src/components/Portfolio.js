@@ -27,7 +27,7 @@ function Portfolio(props) {
             image={require("../assets/petLogo.PNG")}
             name={`Fuzzy Friends Finder`}
             code={`https://github.com/csundheimjr/fuzzy-friend-finder`}
-            description={`Frontend app that utilizes Purina's API to display available pets in a users zipcode. Users can favorite pets to refer back to at a later time.`}
+            description={`Frontend app that utilizes Purina's API to display available pets in a user's area. Users can favorite pets to refer back to at a later time.`}
           />
           <Project
             id={`codingQuiz`}
