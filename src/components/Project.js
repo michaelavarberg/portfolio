@@ -2,7 +2,15 @@ function Project(props) {
   return (
     <div className="d-flex align-items-center m-3 col-sm-12 col-md-9 col-lg-8 col-xl-6">
       <figure id={props.id}>
-        <a href={props.href} rel="noopener">
+        <a
+          href={props.href}
+          rel="noopener"
+          className="position-relative"
+          id="image"
+        >
+          <p className="position-absolute text-center top-50 start-50 translate-middle">
+            {props.description}
+          </p>
           <img
             src={props.image}
             alt="screenshot of the app"

@@ -18,7 +18,7 @@ body {
 }
 
 body {
-  background: linear-gradient(-45deg, white, grey, darkgrey, white);
+  background: linear-gradient(-45deg, white, grey, white, white);
   background-size: 600% 600%;
   animation: gradient 10s ease infinite;
 }
@@ -35,6 +35,17 @@ body {
   }
 }
 
+#image p {
+  display: none;
+}
+#image:hover img {
+  opacity: 10%;
+}
+#image:hover p {
+  background: white;
+  color: black;
+  display: block;
+}
 .btn {
   background-color: var(--black);
   color: var(--pink);
