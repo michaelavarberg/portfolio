@@ -4,7 +4,8 @@ function Project(props) {
       <figure id={props.id}>
         <a
           href={props.href}
-          rel="noopener"
+          target="_blank"
+          rel="noopener noreferrer"
           className="position-relative"
           id="image"
         >
@@ -19,7 +20,12 @@ function Project(props) {
         </a>
         <div className="d-flex flex-column justify-content-center">
           <h3 className="text-center m-2">{props.name}</h3>
-          <a className="text-center" href={props.code} rel="noopener">
+          <a
+            className="text-center"
+            href={props.code}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Code
           </a>
         </div>

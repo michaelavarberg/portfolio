@@ -79,7 +79,8 @@ function Header() {
               <a
                 id="github-link"
                 href="https://github.com/michaelavarberg"
-                rel="noopener"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 {" "}
                 <i className="fa-brands fa-github fa-2xl header-text"></i>
@@ -89,7 +90,8 @@ function Header() {
               <a
                 id="linkedin-link"
                 href="https://www.linkedin.com/in/michaelavarberg"
-                rel="noopener"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <i className="fa-brands fa-linkedin fa-2xl header-text"></i>
               </a>
