@@ -52,7 +52,7 @@ function Header() {
                 portfolio
               </a>
             </li>
-            <li className=" m-3">
+            {/* <li className=" m-3">
               <a
                 className="header-text"
                 id="contact-info"
@@ -62,7 +62,7 @@ function Header() {
               >
                 contact
               </a>
-            </li>
+            </li> */}
             <li className="m-3">
               <a
                 className="header-text"
