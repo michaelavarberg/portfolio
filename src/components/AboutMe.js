@@ -13,10 +13,11 @@ function AboutMe(props) {
               />
             </figure>
             <h4 className="text-center w-50 border p-3">
-              I am a software developer living in Denver, Colorado. I studied
-              Applied Math in college and then went on to teach 7th grade math.
-              I love problem-solving and critical thinking, hence my career
-              change! When I'm not coding, I enjoy reading, golfing and playing
+              I am a software developer with experience in JavaScript, React,
+              NodeJS, MySQL, MongoDB, Express and GraphQL. I studied Applied
+              Math in college and then went on to teach 7th grade math. I love
+              problem-solving and critical thinking, hence my career change!
+              When I'm not coding, I enjoy reading, golfing and playing
               pickleball.
             </h4>
           </div>
